@@ -83,7 +83,7 @@ export default function Projects() {
             icon: Activity
         },
         {
-            title: "DuroShox - QR PackTrack",
+            title: "QR PackTrack",
             desc: "Smart logistics solution with QR-based product and container tracking.",
             icon: Truck
         },

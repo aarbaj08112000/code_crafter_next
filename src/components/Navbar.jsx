@@ -37,6 +37,7 @@ export default function Navbar() {
                 { name: "Home", path: "/" },
                 { name: "About Us", path: "/about-us" },
                 { name: "Services", path: "/services" },
+                { name: "Internship", path: "/internship" },
                 { name: "Projects", path: "/projects" },
                 { name: "Contact", path: "/contact-us" }
               ].map((link) => (
