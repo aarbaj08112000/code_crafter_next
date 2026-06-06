@@ -30,7 +30,7 @@ export default function Home() {
         </div>
 
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 animate-in fade-in slide-in-from-left duration-1000">
+          <div className="space-y-8 animate-in fade-in slide-in-from-left duration-1000 mt-7 md:mt-0">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#8a4785]/10 border border-[#8a4785]/20 text-[#8a4785] text-sm font-medium">
               <Zap className="w-4 h-4 mr-2" />
               <span>Innovative IT Solutions</span>
@@ -55,7 +55,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative animate-in fade-in slide-in-from-right duration-1000">
+          <div className="relative animate-in fade-in slide-in-from-right duration-1000 ">
             <div className="relative w-full aspect-square max-w-[500px] mx-auto group">
               {/* Corner Accents */}
               <div className="absolute -top-4 -left-4 w-32 h-32 border-t-8 border-l-8 border-[#8a4785] rounded-tl-[3rem] opacity-20 group-hover:opacity-40 transition-opacity duration-500" />
@@ -142,7 +142,7 @@ export default function Home() {
       {/* Services Preview Section */}
       <section className="py-24 px-6 lg:px-20 relative overflow-hidden bg-gradient-to-b from-white to-transparent">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
-          <div className="lg:w-1/2 relative">
+          <div className="w-full lg:w-1/2 relative min-w-0">
             <div className="relative aspect-[4/3] w-full rounded-4xl overflow-hidden glass rounded-[2.5rem] p-4 shadow-2xl">
               <Image
                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"
