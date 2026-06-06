@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden px-6 lg:px-20">
+      <section className="relative min-h-[80vh] flex items-center pt-20 overflow-hidden px-6 lg:px-20">
         <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
           <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-[#8a4785]/10 rounded-full blur-[120px]" />
           <div className="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] bg-[#c6809c]/10 rounded-full blur-[100px]" />

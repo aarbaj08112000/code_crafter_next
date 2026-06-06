@@ -63,7 +63,7 @@ export default function Navbar() {
 
             {/* CTA / Action */}
             <div className="flex items-center gap-4">
-              <Link href="https://wa.me/919405843312?text=Hello%20Code%20Crafter%2C%20I'm%20interested%20in%20hiring%20you%20for%20a%20project!" target="_blank" className="hidden md:block px-5 py-2 bg-gradient-to-r from-[#8a4785] to-[#c6809c] text-white text-sm font-bold rounded-xl shadow-md hover:shadow-[#8a4785]/20 transition-all">
+              <Link href="https://wa.me/919405843312?text=Hello%20Code%20Crafter%2C%20I'm%20interested%20in%20hiring%20you%20for%20a%20project!" target="_blank" className="hidden md:hidden px-5 py-2 bg-gradient-to-r from-[#8a4785] to-[#c6809c] text-white text-sm font-bold rounded-xl shadow-md hover:shadow-[#8a4785]/20 transition-all">
                 Hire Us
               </Link>
 
@@ -106,7 +106,7 @@ export default function Navbar() {
               <Link 
                 href="https://wa.me/919405843312?text=Hello%20Code%20Crafter%2C%20I'm%20interested%20in%20hiring%20you%20for%20a%20project!" 
                 target="_blank" 
-                className="block w-full text-center px-5 py-3 bg-gradient-to-r from-[#8a4785] to-[#c6809c] text-white text-sm font-bold rounded-xl shadow-md hover:shadow-[#8a4785]/20 transition-all"
+                className="hidden w-full text-center px-5 py-3 bg-gradient-to-r from-[#8a4785] to-[#c6809c] text-white text-sm font-bold rounded-xl shadow-md hover:shadow-[#8a4785]/20 transition-all"
               >
                 Hire Us
               </Link>
