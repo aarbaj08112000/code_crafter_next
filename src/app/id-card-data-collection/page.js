@@ -105,7 +105,7 @@ export default function Page() {
 
           <div className="relative w-full mt-10 lg:mt-0">
             <ProductHeroMockup
-              src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop"
+              src="/products/id-card-data-collection.jpg"
               alt="ID Card Data Collection Software and Verification Portal"
               moduleName="ID Card Data Collection Hub"
               badgeText="Live Web Capture"

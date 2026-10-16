@@ -104,7 +104,7 @@ export default function Page() {
 
           <div className="relative w-full mt-10 lg:mt-0">
             <ProductHeroMockup
-              src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2069&auto=format&fit=crop"
+              src="/products/business-websites.jpg"
               alt="Custom Business Website Development"
               moduleName="Corporate Web Platform"
               badgeText="High Core Web Vitals"

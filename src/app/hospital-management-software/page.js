@@ -105,7 +105,7 @@ export default function Page() {
 
           <div className="relative w-full mt-10 lg:mt-0">
             <ProductHeroMockup
-              src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop"
+              src="/products/hospital-management.jpg"
               alt="Hospital Management Software & Clinic ERP Dashboard"
               moduleName="Hospital HMIS Clinical Suite"
               badgeText="Live Clinical Sync"

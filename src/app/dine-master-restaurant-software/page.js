@@ -104,7 +104,7 @@ export default function Page() {
 
           <div className="relative w-full mt-10 lg:mt-0">
             <ProductHeroMockup
-              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop"
+              src="/products/restaurant-software.jpg"
               alt="Dine Master Restaurant POS and Dining Table Management"
               moduleName="Dine Master POS Terminal"
               badgeText="Wireless KOT Active"

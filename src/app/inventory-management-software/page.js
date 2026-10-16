@@ -48,7 +48,7 @@ export default function Page() {
              
              <div className="relative w-full mt-10 lg:mt-0">
                <ProductHeroMockup
-                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
+                 src="/products/inventory-management.jpg"
                  alt="Inventory Management Software Dashboard"
                  moduleName="Multi-Warehouse Inventory Mesh"
                  badgeText="Warehouse Mesh"

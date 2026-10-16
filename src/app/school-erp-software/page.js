@@ -48,7 +48,7 @@ export default function Page() {
              
              <div className="relative w-full mt-10 lg:mt-0">
                <ProductHeroMockup
-                 src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=2070&auto=format&fit=crop"
+                 src="/products/school-erp.jpg"
                  alt="School ERP Software Dashboard"
                  moduleName="School ERP & Campus Management"
                  badgeText="Integrated Campus"

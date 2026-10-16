@@ -105,7 +105,7 @@ export default function Page() {
 
           <div className="relative w-full mt-10 lg:mt-0">
             <ProductHeroMockup
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
+              src="/products/hrms-software.jpg"
               alt="HRMS Software Dashboard & Workforce Management"
               moduleName="HRMS & Payroll Automation Portal"
               badgeText="Live Biometric Sync"

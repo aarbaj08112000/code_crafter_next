@@ -48,7 +48,7 @@ export default function Page() {
              
              <div className="relative w-full mt-10 lg:mt-0">
                <ProductHeroMockup
-                 src="https://images.unsplash.com/photo-1601598851547-4302969d0614?q=80&w=2070&auto=format&fit=crop"
+                 src="/products/barcode-inventory.jpg"
                  alt="Barcode Inventory Dashboard"
                  moduleName="Barcode Scanner & Lot Engine"
                  badgeText="Sub-Second Scan"

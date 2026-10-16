@@ -48,7 +48,7 @@ export default function Page() {
              
              <div className="relative w-full mt-10 lg:mt-0">
                <ProductHeroMockup
-                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop"
+                 src="/products/crm-software.jpg"
                  alt="CRM Software Dashboard"
                  moduleName="Sales CRM Pipeline Manager"
                  badgeText="Live Pipeline Sync"

@@ -105,7 +105,7 @@ export default function Page() {
 
           <div className="relative w-full mt-10 lg:mt-0">
             <ProductHeroMockup
-              src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2070&auto=format&fit=crop"
+              src="/products/ecommerce-admin.jpg"
               alt="Ecommerce Website and Multi-Vendor Admin Dashboard"
               moduleName="E-Commerce Admin & Storefront"
               badgeText="Live Order Stream"

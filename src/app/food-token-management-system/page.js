@@ -104,7 +104,7 @@ export default function Page() {
 
           <div className="relative w-full mt-10 lg:mt-0">
             <ProductHeroMockup
-              src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=2074&auto=format&fit=crop"
+              src="/products/food-token.jpg"
               alt="Food Token and Cafeteria Management System in Canteen"
               moduleName="Food Token & KOT Manager"
               badgeText="Queue Calling Active"

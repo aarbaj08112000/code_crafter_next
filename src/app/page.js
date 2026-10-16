@@ -71,7 +71,7 @@ export default function Home() {
 
               <div className="relative w-full h-full rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/20 floating">
                 <Image
-                  src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2070&auto=format&fit=crop"
+                  src="/products/hero-coding.jpg"
                   alt="Code Crafter Hero"
                   fill
                   className="object-cover relative z-10 transition-transform duration-700 group-hover:scale-110"
@@ -149,7 +149,7 @@ export default function Home() {
           <div className="lg:w-1/2 relative">
             <div className="relative aspect-[4/3] w-full rounded-4xl overflow-hidden glass rounded-[2.5rem] p-4 shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"
+                src="/products/dashboard-analytics.jpg"
                 alt="Modern Tech Services"
                 fill
                 className="object-cover rounded-3xl"

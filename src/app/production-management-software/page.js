@@ -48,7 +48,7 @@ export default function Page() {
              
              <div className="relative w-full mt-10 lg:mt-0">
                <ProductHeroMockup
-                 src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop"
+                 src="/products/production-management.jpg"
                  alt="Production Management Dashboard"
                  moduleName="Production & Shop Floor Router"
                  badgeText="Live Floor Router"

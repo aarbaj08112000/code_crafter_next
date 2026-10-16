@@ -48,7 +48,7 @@ export default function Page() {
              
              <div className="relative w-full mt-10 lg:mt-0">
                <ProductHeroMockup
-                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"
+                 src="/products/purchase-management.jpg"
                  alt="Purchase Management Dashboard"
                  moduleName="Procurement & PO Approval Hub"
                  badgeText="Approval Flow Active"
