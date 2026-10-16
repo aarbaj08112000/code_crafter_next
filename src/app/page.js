@@ -1,12 +1,9 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import {
   Code2,
   Cpu,
   Globe,
-  Layout,
   Rocket,
   ShieldCheck,
   Smile,
@@ -19,24 +16,33 @@ import {
   Handshake
 } from "lucide-react";
 
+export const metadata = {
+  title: "Code Crafter Infotech | Web & Custom ERP Software Development Company",
+  description:
+    "Leading IT solutions, custom ERP software, CRM solutions, barcode inventory systems, and responsive web application development company.",
+  alternates: {
+    canonical: "/",
+  },
+};
+
 export default function Home() {
   return (
     <div className="flex flex-col w-full overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] flex items-center pt-20 overflow-hidden px-6 lg:px-20">
+      <section className="relative min-h-[90vh] flex items-center pt-32 lg:pt-36 pb-16 overflow-hidden px-6 lg:px-20">
         <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
           <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-[#8a4785]/10 rounded-full blur-[120px]" />
           <div className="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] bg-[#c6809c]/10 rounded-full blur-[100px]" />
         </div>
 
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 animate-in fade-in slide-in-from-left duration-1000 mt-7 md:mt-0">
+          <div className="space-y-8 animate-in fade-in slide-in-from-left duration-1000 mt-6 lg:mt-0">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#8a4785]/10 border border-[#8a4785]/20 text-[#8a4785] text-sm font-medium">
               <Zap className="w-4 h-4 mr-2" />
               <span>Innovative IT Solutions</span>
             </div>
 
-            <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
+            <h1 className="text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
               Crafting <span className="bg-gradient-to-r from-[#8a4785] to-[#c6809c] bg-clip-text text-transparent">Code</span>,
               <br />Creating <span className="bg-gradient-to-r from-[#c6809c] to-[#8a4785] bg-clip-text text-transparent">Futures</span>
             </h1>
@@ -55,7 +61,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative animate-in fade-in slide-in-from-right duration-1000 ">
+          <div className="relative animate-in fade-in slide-in-from-right duration-1000">
             <div className="relative w-full aspect-square max-w-[500px] mx-auto group">
               {/* Corner Accents */}
               <div className="absolute -top-4 -left-4 w-32 h-32 border-t-8 border-l-8 border-[#8a4785] rounded-tl-[3rem] opacity-20 group-hover:opacity-40 transition-opacity duration-500" />
@@ -78,9 +84,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats/Logo Section summary could go here */}
-
-      {/* Why Us Section (Newly Added) */}
+      {/* Why Us Section */}
       <section className="pt-24 pb-12 px-6 lg:px-20 bg-white/50 relative overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 space-y-4">
@@ -142,7 +146,7 @@ export default function Home() {
       {/* Services Preview Section */}
       <section className="py-24 px-6 lg:px-20 relative overflow-hidden bg-gradient-to-b from-white to-transparent">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
-          <div className="w-full lg:w-1/2 relative min-w-0">
+          <div className="lg:w-1/2 relative">
             <div className="relative aspect-[4/3] w-full rounded-4xl overflow-hidden glass rounded-[2.5rem] p-4 shadow-2xl">
               <Image
                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"
@@ -211,23 +215,46 @@ export default function Home() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 px-6 lg:px-20">
-        <div className="max-w-7xl mx-auto bg-gradient-to-r from-[#8a4785] to-[#c6809c] rounded-[3rem] p-12 lg:p-20 relative overflow-hidden shadow-2xl group">
-          <div className="absolute top-0 right-0 w-full h-full opacity-10 bg-[radial-gradient(circle_at_top_right,white,transparent)]" />
+      <section className="py-20 lg:py-24 px-6 lg:px-20 bg-gradient-to-b from-transparent via-purple-50/15 to-transparent relative overflow-hidden">
+        {/* Soft ambient background glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-gradient-to-r from-[#8a4785]/10 to-[#c6809c]/10 rounded-full blur-[130px] pointer-events-none -z-10" />
 
-          <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10">
-            <div className="text-center lg:text-left space-y-4">
-              <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight">Ready to start your <br />next project?</h2>
-              <p className="text-white/80 text-lg">Let's build something extraordinary together.</p>
-            </div>
+        <div className="max-w-7xl mx-auto">
+          <div className="relative rounded-[2.5rem] bg-gradient-to-r from-[#8a4785] via-[#853f80] to-[#c6809c] p-10 md:p-14 lg:p-16 overflow-hidden shadow-2xl border border-white/20 group">
+            {/* Subtle radial sheen & corner glow */}
+            <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.22),transparent_60%)] pointer-events-none" />
+            <div className="absolute -bottom-16 -left-16 w-64 h-64 bg-white/10 rounded-full blur-2xl pointer-events-none" />
 
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/contact-us" className="px-10 py-5 bg-white text-[#8a4785] rounded-2xl font-bold hover:scale-105 transition-transform shadow-xl">
-                Contact Us Now
-              </Link>
-              <Link href="/about-us" className="px-10 py-5 bg-[#8a4785]/20 border border-white/30 text-white rounded-2xl font-bold hover:bg-[#8a4785]/30 transition-all backdrop-blur-sm">
-                About Our Process
-              </Link>
+            <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10">
+              <div className="space-y-4 text-center lg:text-left max-w-2xl">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/20 border border-white/25 text-white text-xs font-semibold backdrop-blur-md">
+                  <Sparkles className="w-3.5 h-3.5 text-amber-200" />
+                  <span>Start Building Today</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white leading-tight tracking-tight">
+                  Ready to start your <br className="hidden sm:inline" />next project?
+                </h2>
+                <p className="text-white/95 text-base lg:text-lg leading-relaxed">
+                  Let&apos;s build something extraordinary together. From custom ERP systems to modern high-converting web applications.
+                </p>
+              </div>
+
+              {/* Vertically Stacked Buttons: One Below Another */}
+              <div className="flex flex-col gap-3.5 shrink-0 w-full sm:w-72 md:w-80">
+                <Link
+                  href="/contact-us"
+                  className="w-full px-8 py-4 bg-white text-[#8a4785] hover:bg-gray-50 rounded-2xl font-bold text-sm sm:text-base shadow-xl hover:-translate-y-0.5 transition-all duration-300 text-center flex items-center justify-center gap-2 whitespace-nowrap"
+                >
+                  <span>Contact Us Now</span>
+                  <ArrowRight className="w-4 h-4 shrink-0" />
+                </Link>
+                <Link
+                  href="/about-us"
+                  className="w-full px-8 py-4 bg-white/15 hover:bg-white/25 text-white rounded-2xl font-semibold text-sm sm:text-base backdrop-blur-md transition-all duration-300 text-center border border-white/25 hover:border-white/40 whitespace-nowrap"
+                >
+                  About Our Process
+                </Link>
+              </div>
             </div>
           </div>
         </div>

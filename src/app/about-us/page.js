@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CallToAction from "@/components/CallToAction";
 import {
   Users,
   Target,
@@ -9,14 +10,25 @@ import {
   CheckCircle2
 } from "lucide-react";
 
+export const metadata = {
+  title: "About Us | Code Crafter Infotech",
+  description:
+    "Learn more about Code Crafter Infotech, our mission, team, and expertise in delivering cutting-edge ERP systems, CRM software, and custom web applications.",
+  alternates: {
+    canonical: "/about-us",
+  },
+};
+
 export default function AboutUs() {
+  const companyName = process.env.NEXT_PUBLIC_APP_NAME || "Code Crafter Infotech";
+
   return (
     <div className="flex flex-col w-full overflow-hidden">
       {/* Page Header */}
-      <section className="pt-32 pb-4 px-6 lg:px-20 bg-gradient-to-b from-[#8a4785]/10 to-transparent">
+      <section className="pt-36 lg:pt-44 pb-8 px-6 lg:px-20 bg-gradient-to-b from-[#8a4785]/10 to-transparent">
         <div className="max-w-7xl mx-auto text-center space-y-6">
           <h1 className="text-3xl lg:text-5xl font-bold bg-gradient-to-r from-[#8a4785] to-[#c6809c] bg-clip-text text-transparent">
-            About {process.env.NEXT_PUBLIC_APP_NAME}
+            About {companyName}
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto font-medium">
             Transforming ideas into innovative digital solutions.
@@ -160,19 +172,17 @@ export default function AboutUs() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 px-6 lg:px-20 text-center bg-white">
-        <div className="max-w-3xl mx-auto space-y-8">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Ready to work with us?</h2>
-          <p className="text-lg text-gray-600">
-            Join the many businesses that have already transformed their digital presence with Code Crafter.
-          </p>
-          <div>
-            <a href="/contact-us" className="inline-flex items-center px-10 py-5 bg-gradient-to-r from-[#8a4785] to-[#c6809c] text-white rounded-2xl font-bold hover:scale-105 transition-transform shadow-lg">
-              Contact Us Today
-            </a>
-          </div>
-        </div>
-      </section>
+      <CallToAction
+        badge="Software Engineering Partnership"
+        headline="Ready to Accelerate Your Digital Growth?"
+        subheadline="Join forward-thinking companies that have scaled their operations with Code Crafter. From enterprise ERP architecture to intuitive web applications."
+        buttonText="Work With Us Today"
+        trustPoints={[
+          "Direct Senior Developer Access",
+          "Transparent Milestones & Deliverables",
+          "Long-Term Maintenance & SLA"
+        ]}
+      />
     </div>
   );
 }

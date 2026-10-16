@@ -180,8 +180,10 @@ export default function OurProjects() {
 
     // Use persistence for login status
     useEffect(() => {
-        const loggedIn = localStorage.getItem("isLoggedIn") === "true";
-        if (loggedIn) setIsLoggedIn(true);
+        const loggedIn = typeof window !== "undefined" && localStorage.getItem("isLoggedIn") === "true";
+        if (loggedIn) {
+            queueMicrotask(() => setIsLoggedIn(true));
+        }
     }, []);
 
     const handleLogin = (e) => {

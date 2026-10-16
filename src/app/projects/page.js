@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import {
     ExternalLink,
@@ -28,6 +26,15 @@ import {
     Barcode,
     Ticket
 } from "lucide-react";
+
+export const metadata = {
+    title: "Our Projects & Portfolio | Code Crafter Infotech",
+    description:
+        "Explore enterprise web apps, Android applications, ERP systems, and cloud portals developed by Code Crafter Infotech.",
+    alternates: {
+        canonical: "/projects",
+    },
+};
 
 const WhatsAppIcon = ({ className, strokeWidth }) => (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
@@ -154,7 +161,7 @@ export default function Projects() {
 
     return (
         <div className="flex flex-col w-full overflow-hidden bg-white">
-            <section className="pt-32 pb-4 px-6 lg:px-20 bg-gradient-to-b from-[#8a4785]/10 to-transparent">
+            <section className="pt-36 lg:pt-44 pb-8 px-6 lg:px-20 bg-gradient-to-b from-[#8a4785]/10 to-transparent">
                 <div className="max-w-7xl mx-auto text-center space-y-6">
                     <h1 className="text-3xl lg:text-5xl font-bold bg-gradient-to-r from-[#8a4785] to-[#c6809c] bg-clip-text text-transparent">
                         Our Projects

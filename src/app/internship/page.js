@@ -1,5 +1,3 @@
-"use client";
-
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -36,15 +34,24 @@ import {
   ExternalLink
 } from "lucide-react";
 
+export const metadata = {
+  title: "IT Internship & Practical Training Program | Code Crafter Infotech",
+  description:
+    "Join the Code Crafter hands-on IT Internship program. Master Next.js, NestJS, Elasticsearch, modern databases, and work on real-world production projects.",
+  alternates: {
+    canonical: "/internship",
+  },
+};
+
 export default function InternshipPage() {
   const technologies = [
-    { name: "NestJS", desc: "Backend Development", icon: Server, color: "text-[#8a4785]", bg: "bg-purple-50" },
-    { name: "Next.js", desc: "Frontend Development", icon: Layout, color: "text-gray-900", bg: "bg-gray-50" },
-    { name: "CodeIgniter", desc: "PHP Backend", icon: Zap, color: "text-orange-600", bg: "bg-orange-50" },
-    { name: "JavaScript", desc: "Core & Advanced", icon: Code2, color: "text-yellow-600", bg: "bg-yellow-50" },
-    { name: "Elasticsearch", desc: "Search & Analytics", icon: Search, color: "text-blue-600", bg: "bg-blue-50" },
-    { name: "MySQL", desc: "Database Management", icon: Database, color: "text-blue-700", bg: "bg-blue-50" },
-    { name: "Turborepo", desc: "Monorepo Management", icon: Box, color: "text-[#8a4785]", bg: "bg-purple-50" },
+    { name: "NestJS", desc: "Backend Development", image: "/tech/nestjs.svg", bg: "bg-rose-50/80 border-rose-100" },
+    { name: "Next.js", desc: "Frontend Development", image: "/tech/nextjs.svg", bg: "bg-gray-100/90 border-gray-200" },
+    { name: "CodeIgniter", desc: "PHP Backend", image: "/tech/codeigniter.svg", bg: "bg-orange-50/80 border-orange-100" },
+    { name: "JavaScript", desc: "Core & Advanced", image: "/tech/javascript.svg", bg: "bg-amber-50/80 border-amber-100" },
+    { name: "Elasticsearch", desc: "Search & Analytics", image: "/tech/elasticsearch.svg", bg: "bg-emerald-50/80 border-emerald-100" },
+    { name: "MySQL", desc: "Database Management", image: "/tech/mysql.svg", bg: "bg-sky-50/80 border-sky-100" },
+    { name: "Turborepo", desc: "Monorepo Management", image: "/tech/turborepo.svg", bg: "bg-purple-50/80 border-purple-100" },
   ];
 
   const systemDesign = [
@@ -88,7 +95,7 @@ export default function InternshipPage() {
     <div className="flex flex-col w-full overflow-hidden bg-white text-gray-900">
 
       {/* Hero Section with matching Projects styling */}
-      <section className="pt-32 pb-10 px-6 lg:px-20 bg-gradient-to-b from-[#8a4785]/10 to-transparent">
+      <section className="pt-36 lg:pt-44 pb-10 px-6 lg:px-20 bg-gradient-to-b from-[#8a4785]/10 to-transparent">
         <div className="max-w-7xl mx-auto flex flex-col items-center text-center space-y-8">
           <div className="animate-in fade-in slide-in-from-bottom duration-700">
             <span className="px-4 py-1.5 rounded-full bg-[#8a4785]/10 border border-[#8a4785]/20 text-[#8a4785] text-sm font-bold tracking-widest uppercase">
@@ -145,8 +152,14 @@ export default function InternshipPage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {technologies.map((tech, i) => (
               <div key={i} className="group p-8 rounded-3xl bg-white border border-gray-100 hover:border-[#8a4785]/30 hover:shadow-2xl transition-all duration-500 cursor-default">
-                <div className={`w-14 h-14 rounded-2xl ${tech.bg} flex items-center justify-center mb-6 border border-transparent shadow-sm group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500`}>
-                  <tech.icon className={`w-8 h-8 ${tech.color}`} />
+                <div className={`w-14 h-14 rounded-2xl ${tech.bg} flex items-center justify-center mb-6 border shadow-sm group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500 p-2.5`}>
+                  <Image
+                    src={tech.image}
+                    alt={`${tech.name} logo`}
+                    width={36}
+                    height={36}
+                    className="w-8 h-8 object-contain"
+                  />
                 </div>
                 <h3 className="font-bold text-xl mb-1 text-gray-900">{tech.name}</h3>
                 <p className="text-gray-500 text-sm font-medium">{tech.desc}</p>
@@ -233,7 +246,7 @@ export default function InternshipPage() {
         <section className="py-12 space-y-16">
           <div className="text-center space-y-4">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">Why Choose <span className="text-[#8a4785]">Code Crafter?</span></h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto font-medium">We don't just teach code; we craft the next generation of software engineers through excellence.</p>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto font-medium">We don&apos;t just teach code; we craft the next generation of software engineers through excellence.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
@@ -254,7 +267,7 @@ export default function InternshipPage() {
           <div className="relative p-12 lg:p-24 rounded-[4rem] bg-gradient-to-r from-[#8a4785] to-[#c6809c] overflow-hidden shadow-2xl group text-white">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,white,transparent)] opacity-20" />
             <div className="relative z-10 flex flex-col items-center text-center space-y-8">
-              <h2 className="text-4xl lg:text-6xl font-bold leading-tight">Let's Build Your Future Together!</h2>
+              <h2 className="text-4xl lg:text-6xl font-bold leading-tight">Let&apos;s Build Your Future Together!</h2>
               <p className="text-xl text-white/90 max-w-2xl font-medium">
                 Be a part of a dynamic team and work on projects that matter.
                 Your journey towards becoming a pro developer starts here.
