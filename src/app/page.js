@@ -146,12 +146,13 @@ export default function Home() {
       {/* Services Preview Section */}
       <section className="py-24 px-6 lg:px-20 relative overflow-hidden bg-gradient-to-b from-white to-transparent">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
-          <div className="lg:w-1/2 relative">
+          <div className="w-full lg:w-1/2 relative">
             <div className="relative aspect-[4/3] w-full rounded-4xl overflow-hidden glass rounded-[2.5rem] p-4 shadow-2xl">
               <Image
                 src="/products/dashboard-analytics.jpg"
                 alt="Modern Tech Services"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover rounded-3xl"
               />
             </div>
@@ -159,7 +160,7 @@ export default function Home() {
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-r from-[#8a4785] to-[#c6809c] rounded-3xl -z-10 shadow-lg" />
           </div>
 
-          <div className="lg:w-1/2 space-y-6">
+          <div className="w-full lg:w-1/2 space-y-6">
             <h2 className="text-sm uppercase tracking-widest text-[#8a4785] font-bold">Our Services</h2>
             <h3 className="text-4xl font-bold text-gray-900 leading-tight">Empowering Your Business With <span className="text-[#8a4785]">Modern Tech</span></h3>
             <p className="text-lg text-gray-600 leading-relaxed">

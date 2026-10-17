@@ -40,13 +40,13 @@ export default function Navbar() {
 
   return (
     <header className="w-full fixed top-0 left-0 z-50 transition-all duration-300">
-      <nav className="mx-auto max-w-7xl mt-4 px-6 relative">
-        <div className={`glass-nav shadow-lg rounded-2xl bg-white flex flex-col border border-white/20 transition-all duration-300 ${isMobileMenuOpen ? "py-4 px-6" : "px-6 py-3"}`}>
+      <nav className="mx-auto max-w-7xl mt-3 sm:mt-4 px-3 sm:px-6 relative">
+        <div className={`glass-nav shadow-lg rounded-2xl bg-white flex flex-col border border-white/20 transition-all duration-300 ${isMobileMenuOpen ? "py-4 px-4 sm:px-6" : "px-3.5 sm:px-6 py-2.5 sm:py-3"}`}>
           
-          <div className="flex items-center justify-between w-full">
+          <div className="flex items-center justify-between w-full gap-2">
             {/* Logo Section */}
-            <Link href="/" className="flex items-center space-x-3 group">
-              <div className="relative w-10 h-10 group-hover:rotate-12 transition-transform duration-300">
+            <Link href="/" className="flex items-center space-x-2 sm:space-x-3 group shrink-0">
+              <div className="relative w-8 h-8 sm:w-10 sm:h-10 shrink-0 group-hover:rotate-12 transition-transform duration-300">
                 <Image
                   src="/logo2.png"
                   alt={`${brandName} Logo`}
@@ -55,7 +55,7 @@ export default function Navbar() {
                   priority
                 />
               </div>
-              <span className="self-center text-xl font-bold whitespace-nowrap bg-gradient-to-r 
+              <span className="self-center text-base sm:text-lg lg:text-xl font-bold whitespace-nowrap bg-gradient-to-r 
                  from-[#8a4785] to-[#c6809c] bg-clip-text 
                  text-transparent">
                 {brandName}
@@ -63,7 +63,7 @@ export default function Navbar() {
             </Link>
 
             {/* Navigation Links - Desktop */}
-            <div className="hidden md:block ml-auto mr-6">
+            <div className="hidden lg:block ml-auto mr-4 xl:mr-6">
               <ul className="flex items-center space-x-6 lg:space-x-8">
                 {navLinks.slice(0, 3).map((link) => (
                   <li key={link.path}>
@@ -128,7 +128,7 @@ export default function Navbar() {
             </div>
 
             {/* CTA / Action */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 sm:gap-4 shrink-0">
               <Link
                 href="/contact-us"
                 className="hidden lg:inline-flex px-5 py-2 bg-gradient-to-r from-[#8a4785] to-[#c6809c] text-white text-sm font-bold rounded-xl shadow-md hover:shadow-[#8a4785]/20 hover:-translate-y-0.5 transition-all"
@@ -140,7 +140,7 @@ export default function Navbar() {
               <button
                 type="button"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="p-2 text-gray-600 md:hidden hover:bg-gray-100 rounded-lg"
+                className="p-1.5 sm:p-2 text-gray-600 lg:hidden hover:bg-gray-100 rounded-lg shrink-0 transition-colors"
                 aria-label="Toggle menu"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -156,7 +156,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Dropdown */}
           {isMobileMenuOpen && (
-            <div className="mt-6 flex flex-col md:hidden animate-in fade-in slide-in-from-top-2 duration-300 w-full max-h-[75vh] overflow-y-auto">
+            <div className="mt-6 flex flex-col lg:hidden animate-in fade-in slide-in-from-top-2 duration-300 w-full max-h-[75vh] overflow-y-auto">
               <ul className="flex flex-col space-y-3 mb-4">
                 {navLinks.map((link) => (
                   <li key={link.path}>
